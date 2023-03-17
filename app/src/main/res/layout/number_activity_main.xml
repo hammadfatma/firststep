@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".NumberMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/stroke_quiz"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/subheading"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <!-- QUESTION 1 : Radio Button : Gender -->
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/question1" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/q1_male"
+                style="@style/wrapwrap"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/q1_female"
+                style="@style/wrapwrap"
+                android:text="@string/female" />
+
+        </RadioGroup>
+
+        <!-- QUESTION 2 : EditText : Age -->
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/question2" />
+        <EditText
+            android:id="@+id/q2_userText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autofillHints="@string/age"
+            android:hint="@string/age"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <!-- QUESTION 3 : Radio Button : Hypertension -->
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/question3" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/q3_yes"
+                style="@style/wrapwrap"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/q3_no"
+                style="@style/wrapwrap"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <!-- QUESTION 4 : Radio Button : Heart_diseases -->
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/question4" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/q4_yes"
+                style="@style/wrapwrap"
+                android:text="@string/yes1" />
+
+            <RadioButton
+                android:id="@+id/q4_no"
+                style="@style/wrapwrap"
+                android:text="@string/no1" />
+
+        </RadioGroup>
+
+        <!-- QUESTION 5 : Radio Button : Ever_married -->
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/question5" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/q5_yes"
+                style="@style/wrapwrap"
+                android:text="@string/yes2" />
+
+            <RadioButton
+                android:id="@+id/q5_no"
+                style="@style/wrapwrap"
+                android:text="@string/no2" />
+
+        </RadioGroup>
+
+        <!-- QUESTION 6 : Check Box : Work_type -->
+
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/question6" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/q6_private"
+                style="@style/wrapwrap"
+                android:text="@string/q6option1" />
+
+            <RadioButton
+                android:id="@+id/q6_selfemployed"
+                style="@style/wrapwrap"
+                android:text="@string/q6option2" />
+
+            <RadioButton
+                android:id="@+id/q6_govtjob"
+                style="@style/wrapwrap"
+                android:text="@string/q6option3" />
+
+            <RadioButton
+                android:id="@+id/q6_children"
+                style="@style/wrapwrap"
+                android:text="@string/q6option4" />
+            <RadioButton
+                android:id="@+id/q6_neverworked"
+                style="@style/wrapwrap"
+                android:text="@string/q6option5" />
+
+        </RadioGroup>
+
+        <!-- QUESTION 7 : Radio Button : Residence_type -->
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/question7" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/q7_urban"
+                style="@style/wrapwrap"
+                android:text="@string/urban" />
+
+            <RadioButton
+                android:id="@+id/q7_rural"
+                style="@style/wrapwrap"
+                android:text="@string/rural" />
+
+        </RadioGroup>
+
+        <!-- QUESTION 8 : EditText : Avg_glucose_level -->
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/question8" />
+        <EditText
+            android:id="@+id/q8_userText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/Avg_glucose_level"
+            android:hint="@string/Avg_glucose_level"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <!-- QUESTION 9 : EditText : Bmi -->
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/question9" />
+        <EditText
+            android:id="@+id/q9_userText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/bmi"
+            android:hint="@string/bmi"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <!-- QUESTION 10 : Check Box : Smoking_status -->
+
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            style="@style/questionText"
+            android:text="@string/question10" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/q10_formerlysmoked"
+                style="@style/wrapwrap"
+                android:text="@string/q10option1" />
+
+            <RadioButton
+                android:id="@+id/q10_neversmoked"
+                style="@style/wrapwrap"
+                android:text="@string/q10option2" />
+
+            <RadioButton
+                android:id="@+id/q10_smoked"
+                style="@style/wrapwrap"
+                android:text="@string/q10option3" />
+
+        </RadioGroup>
+
+
+        <!-- Finish of the questions - Ready to submit answers -->
+        <TextView style="@style/questionDivider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finish_quiz"
+            android:textSize="16sp" />
+
+        <Button
+            style="@style/wrapwrap"
+            android:id="@+id/answerButton"
+            android:layout_marginTop="8dp"
+            android:onClick="submitAnswers"
+            android:text="@string/result_answers" />
+    </LinearLayout>
+
+</ScrollView>
